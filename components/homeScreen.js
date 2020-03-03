@@ -112,7 +112,7 @@ const ShoppingCart  = () => {
                   <View style={{marginBottom:20, marginTop:20, borderRadius:5}}>
                     {product.inCart ? (
                       <View style={{backgroundColor:'#F77752', borderRadius:10 }}>
-                           <Button color="white" title=" remove from cart" onPress = {() => removeProducts(id)} />
+                           <Button color="white" title=" remove from cart" onPress = {() => removeProducts(product.id)} />
                       </View> 
                     ) : (
                       <View style={{backgroundColor:"#30AD88", borderRadius:5}}>
